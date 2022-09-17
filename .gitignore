@@ -1,0 +1,10 @@
+# ParcelJS cache folder
+.cache/
+
+# ParcelJs build folder
+dist/
+
+# Dependency directory
+node_modules/
+
+

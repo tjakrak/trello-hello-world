@@ -1,0 +1,23 @@
+{
+  "name": "trello-hello-world",
+  "version": "1.0.0",
+  "description": "A small hello world power-up",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/html/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjakrak/trello-hello-world.git"
+  },
+  "author": "ryan T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjakrak/trello-hello-world/issues"
+  },
+  "homepage": "https://github.com/tjakrak/trello-hello-world#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
