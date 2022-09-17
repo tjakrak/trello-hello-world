@@ -2,7 +2,11 @@ var WHITE_ICON = 'https://cdn.hyperdev.com/us-east-1%3A3d31b21c-01a0-4da2-8827-4
 var BLACK_ICON = 'https://cdn.hyperdev.com/us-east-1%3A3d31b21c-01a0-4da2-8827-4bc6e88b7618%2Ficon-black.svg';
 
 var onBtnClick = function (t, opts) {
-  console.log('Someone clicked the button');
+    return t.popup({
+        title: 'hello world',
+        url: '../html/popup.html',
+        height: 250
+    });
 };
 
 window.TrelloPowerUp.initialize({
@@ -13,7 +17,7 @@ window.TrelloPowerUp.initialize({
             dark: WHITE_ICON,
             light: BLACK_ICON
             },
-            text: 'Callback',
+            text: 'Hello World',
             callback: onBtnClick,
             condition: 'edit'
         }]
