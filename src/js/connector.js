@@ -4,7 +4,7 @@ var BLACK_ICON = 'https://cdn.hyperdev.com/us-east-1%3A3d31b21c-01a0-4da2-8827-4
 var onBtnClick = function (t, opts) {
     return t.popup({
         title: 'hello world',
-        url: './html/popup.html',
+        url: 'popup.html',
         height: 250
     });
 };
