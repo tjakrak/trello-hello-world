@@ -10,7 +10,14 @@ var onBtnClick = function (t, opts) {
 };
 
 window.TrelloPowerUp.initialize({
-    'board-buttons': function (t, opts) {
+    'board-buttons': async function (t, opts) {
+        var jwt;
+        if (t.isMemberSignedIn()) {
+        jwt = await t.jwt({
+            state: JSON.stringify({ hello: "world" }),
+        });
+        console.log("this is THE JWT token: " + jwt);
+        }
         return [{
             // we can either provide a button that has a callback function
             icon: {
